@@ -1,9 +1,12 @@
+// ignore_for_file: unused_import
+
 import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
-import '../flutter_flow/flutter_flow_web_view.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_fb_news/flutter_fb_news.dart';
+import 'package:flutter_fb_news/flutter_fb_news_config.dart';
 
 class NewsWidget extends StatefulWidget {
   const NewsWidget({Key key}) : super(key: key);
@@ -30,30 +33,36 @@ class _NewsWidgetState extends State<NewsWidget> {
               ),
         ),
         actions: [
-          Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(0, 0, 5, 1),
-            child: InkWell(
-              onTap: () async {
-                await launchURL(
-                    'https://www.facebook.com/AFCDivisionMenores/videos/?ref=page_internal');
-              },
-              child: Column(
-                mainAxisSize: MainAxisSize.max,
-                children: [
-                  Text(
-                    'En vivo',
-                    style: FlutterFlowTheme.of(context).bodyText1.override(
-                          fontFamily: 'Poppins',
-                          color: FlutterFlowTheme.of(context).tertiaryColor,
-                        ),
+          InkWell(
+            onTap: () async {
+              await launchURL(
+                  'https://www.facebook.com/AFCDivisionMenores/videos/?ref=page_internal');
+            },
+            child: Column(
+              mainAxisSize: MainAxisSize.max,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Expanded(
+                  child: Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(0, 0, 15, 0),
+                    child: Text(
+                      'En vivo',
+                      style: FlutterFlowTheme.of(context).subtitle2.override(
+                            fontFamily: 'Poppins',
+                            color: FlutterFlowTheme.of(context).tertiaryColor,
+                          ),
+                    ),
                   ),
-                  Icon(
-                    Icons.remove_red_eye_rounded,
+                ),
+                Padding(
+                  padding: EdgeInsetsDirectional.fromSTEB(0, 0, 15, 0),
+                  child: Icon(
+                    Icons.remove_red_eye,
                     color: FlutterFlowTheme.of(context).tertiaryColor,
-                    size: 40,
+                    size: 35,
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
           ),
         ],
@@ -61,11 +70,24 @@ class _NewsWidgetState extends State<NewsWidget> {
         elevation: 4,
       ),
       backgroundColor: FlutterFlowTheme.of(context).primaryColor,
-      body: FlutterFlowWebView(
-        url: 'https://www.facebook.com/AFCDivisionMenores',
-        bypass: false,
-        verticalScroll: false,
-        horizontalScroll: false,
+      body: Center(
+        child: Scrollbar(
+          child: SingleChildScrollView(
+            child: FbNews(
+              accesToken:
+                  "EAADw6BCi5BIBAIzqdKpHjhQvzv9qQjGApGIJ0orEPH2IsfCvWzis6LWP9lsvxlhkOZC3GvrC0Uo54tezkHbnvS16hNR4ZAUdJR6NZBwXioehVxZBvwhDIZBHQrGHVCZBTSvPHSJhQUI59Uav5Ah0YK9yL3TAy7QXJRZC3af4BWnrSqHcbdHdM2C5JlsSuZCeOZAMZD",
+              pageId: "478275216043051",
+              limit: 25,
+              config: FbNewsConfig(
+                borderColor: Colors.black,
+                backgroundColor: Colors.white,
+                textColor: Colors.black,
+                showBorder: false,
+                subtitle: "von Facebook",
+              ),
+            ),
+          ),
+        ),
       ),
     );
   }
