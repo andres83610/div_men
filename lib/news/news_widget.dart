@@ -75,7 +75,7 @@ class _NewsWidgetState extends State<NewsWidget> {
           child: SingleChildScrollView(
             child: FbNews(
               accesToken:
-                  "EAADw6BCi5BIBAIzqdKpHjhQvzv9qQjGApGIJ0orEPH2IsfCvWzis6LWP9lsvxlhkOZC3GvrC0Uo54tezkHbnvS16hNR4ZAUdJR6NZBwXioehVxZBvwhDIZBHQrGHVCZBTSvPHSJhQUI59Uav5Ah0YK9yL3TAy7QXJRZC3af4BWnrSqHcbdHdM2C5JlsSuZCeOZAMZD",
+                  "",
               pageId: "478275216043051",
               limit: 25,
               config: FbNewsConfig(
