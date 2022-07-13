@@ -36,6 +36,7 @@ class _AmonestacionesWidgetState extends State<AmonestacionesWidget> {
         child: FlutterFlowWebView(
           url: 'https://afc.estiloamano.com/amonestaciones/',
           bypass: false,
+          height: MediaQuery.of(context).size.height * 0.9,
           verticalScroll: false,
           horizontalScroll: false,
         ),

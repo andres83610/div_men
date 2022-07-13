@@ -4,16 +4,14 @@ import '../flutter_flow/flutter_flow_web_view.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class TablaCategoria17CopyWidget extends StatefulWidget {
-  const TablaCategoria17CopyWidget({Key key}) : super(key: key);
+class TablaCategoria19Widget extends StatefulWidget {
+  const TablaCategoria19Widget({Key key}) : super(key: key);
 
   @override
-  _TablaCategoria17CopyWidgetState createState() =>
-      _TablaCategoria17CopyWidgetState();
+  _TablaCategoria19WidgetState createState() => _TablaCategoria19WidgetState();
 }
 
-class _TablaCategoria17CopyWidgetState
-    extends State<TablaCategoria17CopyWidget> {
+class _TablaCategoria19WidgetState extends State<TablaCategoria19Widget> {
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
@@ -31,6 +29,7 @@ class _TablaCategoria17CopyWidgetState
         child: FlutterFlowWebView(
           url: 'https://afc.estiloamano.com/tabla-categoria-6-2-2-2-2-2-3-3/',
           bypass: false,
+          height: MediaQuery.of(context).size.height * 0.9,
           verticalScroll: false,
           horizontalScroll: false,
         ),

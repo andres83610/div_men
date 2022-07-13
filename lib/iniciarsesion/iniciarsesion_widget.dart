@@ -29,6 +29,7 @@ class _IniciarsesionWidgetState extends State<IniciarsesionWidget> {
         child: FlutterFlowWebView(
           url: 'https://flutter.dev',
           bypass: false,
+          height: MediaQuery.of(context).size.height * 0.9,
           verticalScroll: false,
           horizontalScroll: false,
         ),

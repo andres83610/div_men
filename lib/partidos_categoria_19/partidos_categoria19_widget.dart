@@ -5,16 +5,15 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class PartidosCategoria17CopyWidget extends StatefulWidget {
-  const PartidosCategoria17CopyWidget({Key key}) : super(key: key);
+class PartidosCategoria19Widget extends StatefulWidget {
+  const PartidosCategoria19Widget({Key key}) : super(key: key);
 
   @override
-  _PartidosCategoria17CopyWidgetState createState() =>
-      _PartidosCategoria17CopyWidgetState();
+  _PartidosCategoria19WidgetState createState() =>
+      _PartidosCategoria19WidgetState();
 }
 
-class _PartidosCategoria17CopyWidgetState
-    extends State<PartidosCategoria17CopyWidget> {
+class _PartidosCategoria19WidgetState extends State<PartidosCategoria19Widget> {
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
@@ -40,6 +39,7 @@ class _PartidosCategoria17CopyWidgetState
         child: FlutterFlowWebView(
           url: 'https://afc.estiloamano.com/partidos-categoria-17/',
           bypass: false,
+          height: MediaQuery.of(context).size.height * 0.9,
           verticalScroll: false,
           horizontalScroll: false,
         ),

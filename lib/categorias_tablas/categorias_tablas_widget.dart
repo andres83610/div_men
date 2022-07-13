@@ -6,7 +6,7 @@ import '../tabla_categoria_12/tabla_categoria12_widget.dart';
 import '../tabla_categoria_13/tabla_categoria13_widget.dart';
 import '../tabla_categoria_15/tabla_categoria15_widget.dart';
 import '../tabla_categoria_17/tabla_categoria17_widget.dart';
-import '../tabla_categoria_17_copy/tabla_categoria17_copy_widget.dart';
+import '../tabla_categoria_19/tabla_categoria19_widget.dart';
 import '../tabla_categoria_6/tabla_categoria6_widget.dart';
 import '../tabla_categoria_7/tabla_categoria7_widget.dart';
 import '../tabla_categoria_8/tabla_categoria8_widget.dart';
@@ -291,8 +291,7 @@ class _CategoriasTablasWidgetState extends State<CategoriasTablasWidget> {
                             await Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) =>
-                                    TablaCategoria17CopyWidget(),
+                                builder: (context) => TablaCategoria19Widget(),
                               ),
                             );
                           },

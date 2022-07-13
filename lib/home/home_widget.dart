@@ -322,20 +322,6 @@ class _HomeWidgetState extends State<HomeWidget> {
                               fit: BoxFit.cover,
                             ),
                           ),
-                          ClipRRect(
-                            borderRadius: BorderRadius.only(
-                              bottomLeft: Radius.circular(0),
-                              bottomRight: Radius.circular(1),
-                              topLeft: Radius.circular(1),
-                              topRight: Radius.circular(1),
-                            ),
-                            child: Image.asset(
-                              'assets/images/222.jpg',
-                              width: 100,
-                              height: 100,
-                              fit: BoxFit.cover,
-                            ),
-                          ),
                         ],
                       ),
                       Align(
@@ -345,7 +331,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                           child: SmoothPageIndicator(
                             controller: pageViewController ??=
                                 PageController(initialPage: 0),
-                            count: 2,
+                            count: 1,
                             axisDirection: Axis.horizontal,
                             onDotClicked: (i) {
                               pageViewController.animateToPage(
@@ -426,20 +412,6 @@ class _HomeWidgetState extends State<HomeWidget> {
                           ),
                         ),
                       ),
-                      Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(3, 3, 3, 3),
-                        child: Container(
-                          width: 110,
-                          height: 110,
-                          clipBehavior: Clip.antiAlias,
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                          ),
-                          child: Image.asset(
-                            'assets/images/WhatsApp_Image_2021-09-29_at_09.24.59_(1).jpeg',
-                          ),
-                        ),
-                      ),
                     ],
                   ),
                   Row(
@@ -457,20 +429,6 @@ class _HomeWidgetState extends State<HomeWidget> {
                           ),
                           child: Image.asset(
                             'assets/images/WhatsApp_Image_2021-09-29_at_09.25.00_(1).jpeg',
-                          ),
-                        ),
-                      ),
-                      Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(3, 3, 3, 3),
-                        child: Container(
-                          width: 110,
-                          height: 110,
-                          clipBehavior: Clip.antiAlias,
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                          ),
-                          child: Image.asset(
-                            'assets/images/WhatsApp_Image_2021-09-29_at_09.24.59_(2).jpeg',
                           ),
                         ),
                       ),

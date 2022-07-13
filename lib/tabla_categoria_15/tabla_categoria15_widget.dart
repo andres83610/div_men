@@ -29,6 +29,7 @@ class _TablaCategoria15WidgetState extends State<TablaCategoria15Widget> {
         child: FlutterFlowWebView(
           url: 'https://afc.estiloamano.com/tabla-categoria-6-2-2-2-2-2-3-2/',
           bypass: false,
+          height: 90,
           verticalScroll: false,
           horizontalScroll: false,
         ),

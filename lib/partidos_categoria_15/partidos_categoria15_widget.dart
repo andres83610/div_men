@@ -39,6 +39,7 @@ class _PartidosCategoria15WidgetState extends State<PartidosCategoria15Widget> {
         child: FlutterFlowWebView(
           url: 'https://afc.estiloamano.com/partidos-categoria-15/',
           bypass: false,
+          height: MediaQuery.of(context).size.height * 0.9,
           verticalScroll: false,
           horizontalScroll: false,
         ),

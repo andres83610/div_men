@@ -36,6 +36,7 @@ class _ClubsWidgetState extends State<ClubsWidget> {
       body: FlutterFlowWebView(
         url: 'https://afc.estiloamano.com',
         bypass: false,
+        height: MediaQuery.of(context).size.height * 0.9,
         verticalScroll: false,
         horizontalScroll: false,
       ),

@@ -36,6 +36,7 @@ class _TddsWidgetState extends State<TddsWidget> {
         child: FlutterFlowWebView(
           url: 'https://afc.estiloamano.com/tdd/',
           bypass: false,
+          height: MediaQuery.of(context).size.height * 0.9,
           verticalScroll: false,
           horizontalScroll: false,
         ),

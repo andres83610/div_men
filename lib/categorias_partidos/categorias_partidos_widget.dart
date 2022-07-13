@@ -6,7 +6,7 @@ import '../partidos_categoria_12/partidos_categoria12_widget.dart';
 import '../partidos_categoria_13/partidos_categoria13_widget.dart';
 import '../partidos_categoria_15/partidos_categoria15_widget.dart';
 import '../partidos_categoria_17/partidos_categoria17_widget.dart';
-import '../partidos_categoria_17_copy/partidos_categoria17_copy_widget.dart';
+import '../partidos_categoria_19/partidos_categoria19_widget.dart';
 import '../partidos_categoria_6/partidos_categoria6_widget.dart';
 import '../partidos_categoria_7/partidos_categoria7_widget.dart';
 import '../partidos_categoria_8/partidos_categoria8_widget.dart';
@@ -304,7 +304,7 @@ class _CategoriasPartidosWidgetState extends State<CategoriasPartidosWidget> {
                               context,
                               MaterialPageRoute(
                                 builder: (context) =>
-                                    PartidosCategoria17CopyWidget(),
+                                    PartidosCategoria19Widget(),
                               ),
                             );
                           },
