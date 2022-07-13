@@ -83,7 +83,7 @@ class _MyAppState extends State<MyApp> {
                   builder: (context) => Image.asset(
                     'assets/images/icon.png',
                     width: MediaQuery.of(context).size.width * 0.5,
-                    fit: BoxFit.fitWidth,
+                    fit: BoxFit.fill,
                   ),
                 ),
               ),
